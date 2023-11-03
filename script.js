@@ -31,3 +31,25 @@ cat1.drink()
 cat2.sound()
 cat2.walk()
 cat2.drink()
+
+
+
+class Pirate {
+  constructor(name, age, skill){
+    this.name = name;
+    this.age = age;
+    this.skill = skill;
+  }
+
+  sound() {
+    console.log("ARRRGH Matey!!")
+  }
+
+  fight() {
+    console.log(`${this.name} is fighting...`)
+  }
+
+  sail() {
+    console.log(`${this.name} is sailing...`)
+  }
+}
