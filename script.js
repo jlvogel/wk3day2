@@ -35,7 +35,7 @@ cat2.drink()
 
 
 class Pirate {
-  constructor(name, age, skill){
+  constructor(name, age = 32, skill = 'stealing'){
     this.name = name;
     this.age = age;
     this.skill = skill;
@@ -52,4 +52,24 @@ class Pirate {
   sail() {
     console.log(`${this.name} is sailing...`)
   }
+}
+
+jollyRoger = []
+blackPearl = []
+
+for(i=0; i<=2; i++) {
+  jollyRoger.push(new Pirate('Pirate' + (i+1)))
+  blackPearl.push(new Pirate('Pirate' + (i+1)))
+}
+
+for (pirate of jollyRoger) {
+  console.log(pirate.name)
+  console.log(pirate.age)
+  console.log(pirate.skill)
+}
+
+for (pirate of blackPearl) {
+  console.log(pirate.name)
+  console.log(pirate.age)
+  console.log(pirate.skill)
 }
